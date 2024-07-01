@@ -9,7 +9,7 @@ class Account{
     }
 
     public long accountBalance(){
-        long Balance=10_000;
+        long Balance=30_000;
         return Balance;
     }
     public  String accountHolder(){
@@ -56,7 +56,7 @@ class Withdraw extends DebitCard{
             }
         }
         else {
-            System.out.println("Un sufficient bank balance in your account \n"+"\t Please enter the valid amount ");
+            System.out.println(" Insufficient bank balance in your account \n"+"\t Please enter the valid amount ");
         }
     }
 }
@@ -113,6 +113,7 @@ class PayBills_para extends G_pay{
         }
         else{
             System.out.println("Please Enter the valid PIN");
+            
         }
     }
  }
@@ -138,11 +139,14 @@ public class MobileBanking {
             Withdraw objMainWithdraw=new Withdraw();
             objMainWithdraw.B_check();
         }
-        else {
+        else if (Commend==3){
             System.out.println("You choose PayBill");
             MainBillPay objBillPay=new MainBillPay();
             objBillPay.Billing();
         }
-
+        else {
+            System.out.println("Enter the correct Number ");
+            main(args);
+        }
     }
 }
