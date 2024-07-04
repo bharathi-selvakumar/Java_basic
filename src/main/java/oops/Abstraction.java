@@ -1,4 +1,5 @@
 package oops;
+
 abstract class Abstract{
     public void SpeedOfCar(){
         System.out.println("The car can be reach 280km/h ");
@@ -6,7 +7,7 @@ abstract class Abstract{
     abstract void colorOfCar();           ///using the abstract class we can create a duplicate object and overwrite using the other class method
     abstract void modal();               ///
     }
-
+/////////////////////////////////////////////
  class car1 extends Abstract{
 //    public void SpeedOfCar(){
 //        System.out.println("The car can be reach 190km/h ");
