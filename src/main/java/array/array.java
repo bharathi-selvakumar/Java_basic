@@ -90,6 +90,18 @@ class UPdate extends SCanner{
 }
 
 
+/////////passing array is used to pass the array data in parameter ////////////////////////////////
+class passing{
+    public void Passing_array(String[] ff_id){
+        ff_id[1]="devil crime";
+        ff_id[0]="Evil jack";
+        System.out.println("My squad ☠️"+Arrays.toString(ff_id));
+    }
+    public void id(){
+        System.out.println("Introducing my FF Squad ");
+    }
+}
+
 public class array {
     public  static void main(String[] args){
         UPdate obj=new UPdate();
@@ -97,7 +109,12 @@ public class array {
         obj.TOString();
         obj.for_loop();
 //        obj.sCANNER();
-        obj.Update();
+//        obj.Update();
+
+  ////////////
+        passing obj1=new passing();
+        String[] id_ff={"ej","DC","kingJD","kingOfDevil"};
+        obj1.Passing_array(id_ff);
     }
 }
 
