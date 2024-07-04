@@ -74,6 +74,17 @@ class UPdate extends SCanner{
 
         System.out.println("The updated array of Name are "+Arrays.toString(Name));
 
+        System.out.println("Enter the name you want to search");
+        String Search_name=scan.nextLine();
+
+        for(int find=0;find<Name.length;find++){
+            if(Search_name.equalsIgnoreCase(Name[find])){
+                System.out.println("The "+Search_name+" is found and the index is "+find);
+                return;
+            }
+        }
+        System.out.println("The name "+Search_name+" is not found");
+
 
     }
 }
